@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+}
+.text-lila {
+    color: #ad45b8;
+}
+.text-lila h6 {
+    color: #9316a1;
+}
+.text-lila p, .text-lila li {
+    color: #6b2772;
+}
+hr {
+    color: #59205f;
+}

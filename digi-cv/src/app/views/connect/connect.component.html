@@ -1,0 +1,57 @@
+<div class="container mt-5">
+
+    <div class="text-center p-5 bg-light m-auto">
+
+        <h2 class="text-center text-lila">Kontakta mig</h2>
+
+        <form [formGroup]="regForm" (ngSubmit)="onSubmit()" class="m-3 px-5">
+            <div class="mb-3">
+                <input 
+                class="form-control" 
+                type="text" 
+                placeholder="Namn" 
+                formControlName="name" 
+                [class.is-valid]="regForm.controls.name.valid"
+                [class.is-invalid]="regForm.controls.name.invalid && regForm.controls.name.touched">
+                <small *ngIf="regForm.controls.name.invalid && regForm.controls.name.touched" class="text-danger">Namnet måste vara minst två bokstäver</small>
+            </div>
+
+            <div class="mb-3">
+                <input 
+                class="form-control" 
+                type="text" 
+                placeholder="E-postadress"
+                formControlName="email" 
+                [class.is-valid]="regForm.controls.email.valid"
+                [class.is-invalid]="regForm.controls.email.invalid && regForm.controls.email.touched">
+                <small *ngIf="regForm.controls.email.invalid && regForm.controls.email.touched" class="text-danger">Ange en giltig e-postadress</small>
+            </div>
+
+            <div class="mb-3">
+                <input 
+                class="form-control" 
+                type="text" 
+                placeholder="Ämne"
+                formControlName="subject" 
+                [class.is-valid]="regForm.controls.subject.valid"
+                [class.is-invalid]="regForm.controls.subject.invalid && regForm.controls.subject.touched">
+                <small *ngIf="regForm.controls.subject.invalid && regForm.controls.subject.touched" class="text-danger">Ämnet måste vara minst två tecken</small>
+            </div>
+
+            <div class="mb-3">
+                <textarea 
+                class="form-control" 
+                cols="30" 
+                rows="10" 
+                placeholder="Meddelande"
+                formControlName="msg" 
+                [class.is-valid]="regForm.controls.msg.valid"
+                [class.is-invalid]="regForm.controls.msg.invalid && regForm.controls.msg.touched"></textarea>
+                <small *ngIf="regForm.controls.msg.invalid && regForm.controls.msg.touched" class="text-danger">Meddelandet måste vara minst fem tecken</small>
+            </div>
+
+            <button class="btn btn-lila" [disabled]="!regForm.valid">Skicka</button>
+        </form>
+
+    </div>
+</div>

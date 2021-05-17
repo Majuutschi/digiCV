@@ -1,0 +1,35 @@
+.cv-img {
+    width: 90%;
+    border-radius: 50%;
+}
+.images {
+    padding: 0;
+    margin: auto;
+    position: relative;
+}
+.images img.hover-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.images:hover img.hover-img {
+    opacity: 1;
+}
+.text-lila {
+    color: #ad45b8;
+}
+ul {
+    list-style: outside;
+}
+.btn-lila {
+    background: #ad45b8;
+    color: #e6e0ea;
+    font-weight: 500;
+}
+.btn-lila:hover {
+    background: #ad45b8e3;
+}

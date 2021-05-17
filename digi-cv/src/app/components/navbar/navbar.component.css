@@ -1,0 +1,10 @@
+.bg-lila {
+    background: #ad45b8;
+}
+.bg-lila-text {
+    color: #e6e0ea;
+    font-weight: 500;
+}
+.active-link {
+    border-bottom: 2px solid #f4b2f9;
+}

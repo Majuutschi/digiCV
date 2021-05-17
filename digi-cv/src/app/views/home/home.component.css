@@ -1,0 +1,16 @@
+.home-img {
+    width: 35%;
+    border-radius: 50%;
+    
+}
+.text-lila {
+    color: #ad45b8;
+}
+.btn-lila {
+    background: #ad45b8;
+    color: #e6e0ea;
+    font-weight: 500;
+}
+.btn-lila:hover {
+    background: #ad45b8e3;
+}
